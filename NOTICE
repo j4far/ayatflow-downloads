@@ -1,0 +1,19 @@
+AyatFlow speech model (whisper-small-ar-quran-q8_0.bin)
+
+This file is a modified (format-converted and 8-bit quantised) copy of:
+
+  deepdml/whisper-small-ar-quran-mix-norm
+  https://huggingface.co/deepdml/whisper-small-ar-quran-mix-norm
+  Licensed under the Apache License, Version 2.0.
+
+which is a fine-tuned version of OpenAI Whisper (small), MIT licence:
+  https://github.com/openai/whisper
+
+Conversion and quantisation used whisper.cpp (MIT licence):
+  https://github.com/ggml-org/whisper.cpp
+
+Changes: weights converted to the whisper.cpp ggml file format and quantised to q8_0; the decoder
+context length in the header was set from the checkpoint's max_target_positions (448).
+
+Licensed under the Apache License, Version 2.0 (see LICENSE). Distributed on an "AS IS" basis, without
+warranties or conditions of any kind.
