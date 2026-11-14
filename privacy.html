@@ -26,7 +26,7 @@
 <body>
 <main>
   <h1>AyatFlow Privacy Policy</h1>
-  <p class="meta">App: AyatFlow (Android, package <code>com.easyquran.ayatflow</code>) &middot; Publisher: NightLight Developers &middot; Last updated: 12 October 2026</p>
+  <p class="meta">App: AyatFlow (Android: <code>com.nightlight.ayatflow</code>, iOS: <code>com.easyquran.ayatflow</code>) &middot; Publisher: NightLight Developers &middot; Last updated: 14 November 2026</p>
 
   <div class="card">
     <h2>In short</h2>
@@ -38,6 +38,7 @@
       <li>No personal data collected by us, and none sold or shared</li>
       <li>Your progress, profiles and settings stay on your phone</li>
       <li>Your voice is checked on your phone and is never uploaded</li>
+      <li>Your location is optional and approximate (used only for prayer times)</li>
     </ul>
 
     <h2>What stays on your phone</h2>
@@ -50,21 +51,26 @@
       <li>Words you choose to accept in the optional accent profile</li>
       <li>Recitation audio you have listened to, kept so it plays again without a connection</li>
       <li>The speech model, once downloaded</li>
+      <li>Prayer times and your chosen location/calculation settings</li>
     </ul>
     <p>None of this is sent to us. Uninstalling the app, or clearing its storage in Android settings, deletes it. If Android's own backup is switched on for your phone, Google may include app data in your Google backup; that is controlled by Google and your phone's settings, not by AyatFlow.</p>
 
     <h2>Microphone</h2>
     <p>The app asks to use the microphone only for the Recite feature, and only while you are reciting. The sound is turned into text by a speech model that runs on your phone, so your voice does not leave the device. The app does not save or upload your recordings.</p>
 
+    <h2>Location</h2>
+    <p>From version 1.1.0 the Prayer tab can show the five daily prayer times for where you are. The app asks for your approximate location only when you tap "Use my location", and only while the app is open. The location is rounded to about one kilometre, kept on your phone, and sent to the Aladhan prayer-times service for the single purpose of working out the times. It is not sent to us and is not used for anything else. You can instead type the name of a town, or type in the prayer times yourself, and the app then never asks for your location.</p>
+
     <h2>Notifications and reminders</h2>
-    <p>Reading reminders are ordinary notifications that your phone shows at the time you choose. They are scheduled on your phone and need no internet connection. The app asks for permission to post notifications, to deliver them at the exact minute (Android's "Alarms &amp; reminders" setting), and to restore them after the phone restarts. Nothing rings and no alarm is set in your Clock app.</p>
+    <p>Reading reminders and prayer notifications are ordinary notifications that your phone shows at the time you choose. They are scheduled on your phone and need no internet connection. The app asks for permission to post notifications, to deliver them at the exact minute (Android's "Alarms &amp; reminders" setting), and to restore them after the phone restarts. Nothing rings and no alarm is set in your Clock app.</p>
 
     <h2>Internet use</h2>
-    <p>The app works offline once its files are on your phone. It connects to the internet only in these two cases, each started by you using the feature:</p>
+    <p>The app works offline once its files are on your phone. It connects to the internet only in these cases, each started by you using the feature:</p>
     <table>
       <tr><th>When</th><th>Where</th><th>What is sent</th></tr>
       <tr><td>You choose to download the speech model for recitation checking (one time, about 264&nbsp;MB)</td><td>GitHub (<code>github.com/j4far/ayatflow-downloads</code>)</td><td>An ordinary download request</td></tr>
       <tr><td>You listen to a recitation of a verse that is not yet on your phone</td><td>Islamic Network audio servers (<code>cdn.islamic.network</code>)</td><td>An ordinary request for that audio file</td></tr>
+      <tr><td>You use the Prayer tab with a place chosen (version 1.1.0 and later)</td><td>Aladhan prayer-times service, run by Islamic Network (<code>api.aladhan.com</code>)</td><td>The place the times are for: your phone's location rounded to about one kilometre, or the town you typed, with your calculation choices. No name, account or device identifier</td></tr>
     </table>
     <p>Like any website or download, these services can see your IP address and the file requested. We do not send them your name, progress or anything else about you. They have their own privacy policies. We do not operate any server that receives data from the app.</p>
 
